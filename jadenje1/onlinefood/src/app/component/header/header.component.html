@@ -1,0 +1,23 @@
+<header>
+  <div class="container">
+    <a routerLink="/"class="logo" >Food Corner</a>
+    <nav>
+        <ul>
+            <li>
+                <a href="">login</a>
+            </li>
+                <li class="menu-container">
+                    <a routerLink="/dashboard">Profile</a>
+                <div class="menu">
+                    <a routerLink="/Profile">Profile</a>
+                    <a routerLink="/order">Order</a>
+                    <a routerLink="/Login">Logout</a>
+                </div>
+            </li>
+            <li>
+                <a routerLink="/card-page">Card <span *ngIf="cardQuantity">{{cardQuantity}}</span></a>
+            </li>
+        </ul>
+    </nav>
+  </div>
+</header>
